@@ -1,0 +1,53 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  #game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  canvas {
+    border: 2px solid #fff;
+    background-color: #000;
+  }
+  
+  /* Start Button Style */
+  #startButton {
+    position: absolute; /* يجعل الزر عائمًا */
+    top: 50%; /* يتحرك إلى منتصف الشاشة عموديًا */
+    left: 50%; /* يتحرك إلى منتصف الشاشة أفقيًا */
+    transform: translate(-50%, -50%); /* تعديل الموضع ليكون تمامًا في المنتصف */
+    padding: 15px 30px; /* حجم الزر */
+    font-size: 20px; /* حجم الخط */
+    background-color: #4CAF50; /* لون الزر */
+    color: white;
+    border: 2px solid white; /* إطار الزر */
+    border-radius: 8px; /* الزوايا الدائرية */
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease; /* تأثير التكبير */
+  }
+  
+  #startButton:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* تكبير الزر عند التمرير */
+    background-color: #45a049; /* تغيير اللون عند المرور */
+  }
+  
+  #startButton:active {
+    transform: translate(-50%, -50%) scale(1); /* العودة للحجم الطبيعي عند النقر */
+    background-color: #3e8e41; /* لون الزر عند النقر */
+  }
+  
